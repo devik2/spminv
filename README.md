@@ -15,5 +15,9 @@ This is because my main usage is for spindle motors where driver is located near
 spindle and not in remote cabinet.
 
 Why not use STMBL ? I wanted to use different IPM, integrate it into CAN network
-of my homemade CNC and to play with FOC by myself.
+of my homemade CNC and to play with FOC by myself. 
+And I already use my 60V BLDC driver for 3 years and started this "upgrade" before
+I found STMBL.
 
+[And have to say, I'd stay with 60V mosfet inverter but it is hard to find quality(!)
+ motors. All low ripple hi-torque I found are 200V rated]
