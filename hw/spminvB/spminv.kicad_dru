@@ -1,0 +1,10 @@
+(version 1)
+
+# Clearance for fused 400V nets to anything else, functional isolation
+(rule HV
+    (condition "A.NetClass == 'PH' && B.NetClass == 'Default'")
+    (constraint clearance (min 0.7mm)))
+
+(rule reinforced
+    (condition "A.NetClass == 'SELV' && B.NetClass != 'SELV'")
+    (constraint clearance (min 4mm)))
